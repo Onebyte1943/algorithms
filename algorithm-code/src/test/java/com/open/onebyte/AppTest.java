@@ -55,4 +55,10 @@ public class AppTest
         int[] selectionSort = SelectionSort2.selectionSort(array);
         System.out.println(Arrays.toString(selectionSort));
     }
+
+    public void testQuickSort() {
+        int[] array = {5, 3, 6, 2, 10, 15, 0, 230};
+        QuickSort.quickSort(array, 0, array.length - 1);
+        System.out.println(Arrays.toString(array));
+    }
 }
